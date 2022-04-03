@@ -1,0 +1,8 @@
+package br.com.fiap.jpa.service.impl;
+
+import Disciplina;
+import br.com.fiap.jpa.service.GenericService;
+
+public class DisciplinaServiceImpl extends GenericService<Disciplina, String> {
+
+}

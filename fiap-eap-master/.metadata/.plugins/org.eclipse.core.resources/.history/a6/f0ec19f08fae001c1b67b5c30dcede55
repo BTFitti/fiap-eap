@@ -1,0 +1,35 @@
+package br.com.fiap.jpa.service.impl;
+
+import java.util.List;
+
+import br.com.fiap.jpa.entity.Disciplina;
+import br.com.fiap.jpa.service.GenericService;
+
+public class DisciplinaServiceImpl extends GenericService<Disciplina, String> {
+
+	@Override
+	public void inserir(br.com.fiap.jpa.service.impl.Disciplina instance) {
+		
+	}
+
+	@Override
+	public void atualizar(br.com.fiap.jpa.service.impl.Disciplina instance) {
+		
+	}
+
+	@Override
+	public void remover(Long id) {
+		
+	}
+
+	@Override
+	public br.com.fiap.jpa.service.impl.Disciplina obter(Long id) {
+		return null;
+	}
+
+	@Override
+	public List<br.com.fiap.jpa.service.impl.Disciplina> listar() {
+		return null;
+	}
+
+}

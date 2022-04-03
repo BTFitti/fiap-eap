@@ -1,0 +1,40 @@
+package br.com.fiap.jpa.service.impl;
+
+import java.util.List;
+
+import br.com.fiap.jpa.entity.Aluno;
+import br.com.fiap.jpa.service.GenericService;
+
+public class AlunoServiceImpl extends GenericService<Aluno, Long> {
+
+	@Override
+	public void criarNovo(Aluno instance) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void atualizar(Aluno instance) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remover(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Aluno obter(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Aluno> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
