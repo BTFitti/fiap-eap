@@ -1,0 +1,7 @@
+package br.com.fiap.jpa.entity;
+
+import java.io.Serializable;
+
+public class Curso implements Serializable {
+
+}

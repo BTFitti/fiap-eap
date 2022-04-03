@@ -1,0 +1,8 @@
+package br.com.fiap.jpa.service.impl;
+
+import br.com.fiap.jpa.entity.Endereco;
+import br.com.fiap.jpa.service.GenericService;
+
+public class EnderecoServiceImpl extends GenericService<Endereco, Long> {
+
+}

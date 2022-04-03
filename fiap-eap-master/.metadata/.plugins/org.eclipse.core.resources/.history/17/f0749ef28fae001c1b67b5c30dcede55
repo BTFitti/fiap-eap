@@ -1,0 +1,40 @@
+package br.com.fiap.jpa.service.impl;
+
+import java.util.List;
+
+import br.com.fiap.jpa.entity.Disciplina;
+import br.com.fiap.jpa.service.GenericService;
+
+public class DisciplinaServiceImpl extends GenericService<Disciplina, String> {
+
+	@Override
+	public void inserir(Disciplina instance) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void atualizar(Disciplina instance) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remover(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Disciplina obter(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Disciplina> listar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

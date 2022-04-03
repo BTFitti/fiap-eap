@@ -1,0 +1,63 @@
+package br.com.fiap.jpa.service.impl;
+
+import java.util.List;
+
+import br.com.fiap.jpa.dao.impl.AlunoDAOImpl;
+import br.com.fiap.jpa.entity.Aluno;
+import br.com.fiap.jpa.service.GenericService;
+
+public class AlunoServiceImpl extends GenericService<Aluno, Long> {
+	private static AlunoServiceImpl instance = null;
+	private AlunoDAOImpl alunoDAO;
+
+	private AlunoServiceImpl() {
+		alunoDAO = AlunoDAOImpl.getInstance();
+	}
+
+	public static AlunoServiceImpl getInstance() {
+		if (instance == null) {
+			instance = new AlunoServiceImpl();
+		}
+		return instance;
+	}
+
+	@Override
+	public void inserir(Aluno instance) {
+		try {
+			alunoDAO.salvar(instance, getEntityManager());
+		} catch (Exception e) {
+			e.printStackTrace();
+			getEntityManager().getTransaction().rollback();
+		} finally {
+			closeEntityManager();
+		}
+	}
+
+	@Override
+	public void atualizar(Aluno instance) {
+		try {
+			alunoDAO.atualizar(instance, getEntityManager());
+		}catch(Exception e){
+			e.printStackTrace();
+			getEntityManager().getTransaction().rollback();
+		}finally {
+			closeEntityManager();
+		}
+	}
+
+	@Override
+	public void remover(Long id) {
+
+	}
+
+	@Override
+	public Aluno obter(Long id) {
+		return null;
+	}
+
+	@Override
+	public List<Aluno> listar() {
+		return null;
+	}
+
+}
